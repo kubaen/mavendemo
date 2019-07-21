@@ -3,6 +3,7 @@ Zaprojektuj, zaimplementuj i przetestuj b. prosty system do wypożyczania hulajn
 
 ### Założenia (zgrubne)
 1. wypożyczamy hulajnogę i system rejestruje czas do jej zwrócenia
+1. maksymalny czas wypożyczenia 2h, poźniej system blokuje hulajnogę
 2. po zwróceniu system wylicza opłatę za wypożyczenie, na podstawie czasu wykorzystania i taryfy
 1. obowiązują taryfy: 
     - godziny szczytu w dni robocze: 8-9, 16-17: 2 zł za minutę
