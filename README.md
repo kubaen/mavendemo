@@ -1,7 +1,7 @@
-# Demo app 
+## Demo app   [![Build Status](https://travis-ci.com/kubaen/mavendemo.svg?branch=master)](https://travis-ci.com/kubaen/mavendemo)
 
-### Technologies 
+#### Technologies 
 
 - Maven
 - JUnit with AssertJ
-- Travis CI  [![Build Status](https://travis-ci.com/kubaen/mavendemo.svg?branch=master)](https://travis-ci.com/kubaen/mavendemo)
+- Travis CI

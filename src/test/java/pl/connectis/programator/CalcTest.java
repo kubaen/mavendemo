@@ -72,13 +72,13 @@ public class CalcTest {
   }
 
   @ParameterizedTest
-  @ValueSource(ints = { 3, 7, 8, 121, 89 })
+  @ValueSource(ints = { 3, 7, 9, 121, 89 })
   void checkIsOdd(int l) {
     assertFalse(calc.isEven(l));
   }
 
   @ParameterizedTest
-  @CsvSource({"2, 3, 5", "3, 4, 8", "2, 6, 8"})
+  @CsvSource({"2, 3, 5", "3, 4, 7", "2, 6, 8"})
   void checkAdding(int l1, int l2, int result) {
     assertEquals(result, calc.sum(l1, l2));
   }
@@ -131,7 +131,7 @@ public class CalcTest {
 
           assertAll("True or False 3",
               () -> assertTrue(2 < 3 ),
-              () -> assertTrue(3 < 2)
+              () -> assertFalse(3 < 2)
           );
         },
         () -> {
@@ -142,7 +142,7 @@ public class CalcTest {
           // Executed only if the previous assertion is valid.
           assertAll("True or False 2",
               () -> assertTrue(2 < 3 ),
-              () -> assertTrue(3 < 2)
+              () -> assertFalse(3 < 2)
           );
         }
     );
