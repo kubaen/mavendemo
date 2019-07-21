@@ -38,6 +38,11 @@ public class CalcTest {
   }
 
   @Test
+  void divideTest(){
+    assertEquals(1.5, calc.divide(3, 2));
+  }
+
+  @Test
   @DisplayName("Very special adding test")
   @Tag("important")
   void checkAdding() {
