@@ -35,4 +35,8 @@ public class Calc {
     if (l % 2 == 0) return true;
     return false;
   }
+
+  public double divide(long a, long b) {
+    return (double) a / b;
+  }
 }
