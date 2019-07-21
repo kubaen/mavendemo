@@ -37,6 +37,6 @@ public class Calc {
   }
 
   public double divide(long a, long b) {
-    return (1.0 * a) / b;
+    return (double) a / b;
   }
 }
