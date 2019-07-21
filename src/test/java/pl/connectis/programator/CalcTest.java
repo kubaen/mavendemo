@@ -23,7 +23,6 @@ public class CalcTest {
 
   @BeforeEach
   void prepareData(){
-    System.out.println("Wykonuję inicjalizację danych");
     List<Double> values = new ArrayList<>();
     values.add(1.0);
     values.add(2.0);
@@ -35,7 +34,6 @@ public class CalcTest {
 
   @AfterEach
   void cleanUp(){
-    System.out.println("Czyszczenie po każdym teście");
     calc.clear();
   }
 
@@ -43,14 +41,12 @@ public class CalcTest {
   @DisplayName("Very special adding test")
   @Tag("important")
   void checkAdding() {
-    System.out.println("Testowanie dodawania");
     assertEquals(5, calc.sum(2, 3));
   }
 
   @Test
   @Tag("important")
   void checkStd() {
-    System.out.println("Testowanie odchylenia");
     assertEquals(1.5811388300841898, calc.std(), "Błąd w oblczaniu odchylenia " + calc.std());
   }
 
@@ -101,9 +97,9 @@ public class CalcTest {
 
   @Test
   void checkTimeout() {
-    assertTimeoutPreemptively(Duration.ofMillis(10), ()-> {
+    assertTimeoutPreemptively(Duration.ofMillis(100), ()-> {
 
-      Thread.sleep(4000);
+      Thread.sleep(40);
       //calc.mean();
     });
   }

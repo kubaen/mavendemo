@@ -8,10 +8,6 @@ public class Calc {
 
   DescriptiveStatistics stats = new DescriptiveStatistics();
 
-  public Calc() {
-    System.out.println("Calculator instance: " + this);
-  }
-
   public void setValues(List<Double> values) {
     stats.clear();
     for (int i = 0; i < values.size(); i++) {
